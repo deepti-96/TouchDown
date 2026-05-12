@@ -1,2 +1,18 @@
 .DS_Store
 .venv/
+.vscode/
+.idea/
+*.log
+.python-version
+
+# Python cache
+__pycache__/
+.pytest_cache/
+
+# Node and package manager artifacts
+node_modules/
+.npm/
+
+# Local environment files
+.env
+.env.*
