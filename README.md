@@ -1,46 +1,55 @@
 # Touchdown
 
-Touchdown is a relocation platform for people managing international moves. It brings onboarding, move details, document handling, and profile management into one guided experience so users can stay organized through a complex cross-border process.
+Touchdown is a static relocation-tracking web app for people managing international moves. This build brings onboarding, move details, checklist progress, document handling, and profile management into one guided experience.
 
-This repository contains the production frontend build of the Touchdown web app rather than the original source codebase.
+This repository contains the shipped frontend artifact rather than the original source codebase. It works best as a deployable UI snapshot for demos, reviews, and lightweight static hosting.
 
-## What Touchdown Does
+## At a Glance
 
-From the shipped app bundle, Touchdown appears to support:
+Touchdown currently presents a relocation workflow centered around:
 
 - account registration and sign-in
-- relocation onboarding
-- destination, visa, arrival-date, and nationality tracking
-- document upload and download workflows
-- profile management with form pre-fill data
-- data export
-- privacy and sign-out controls
+- destination, visa, arrival-date, and nationality setup
+- dashboard task tracking and search
+- document upload, organization, and prep-sheet downloads
+- profile management with pre-filled form data
+- data export and local sign-out controls
 
-The app uses hash-based client-side routing, so it can be hosted as a static single-page application.
+The app uses hash-based client-side routing, so it can be hosted as a static single-page application without extra rewrite complexity.
 
-## Product Snapshot
-
-Touchdown is built around a simple relocation workflow:
+## Product Flow
 
 1. Create an account or sign in.
-2. Complete onboarding with destination, visa, arrival date, and nationality details.
-3. Review the dashboard for checklist progress.
-4. Prepare forms and manage uploaded files from the documents area.
-5. Maintain personal details and export account data from the profile area.
+2. Complete onboarding with move details.
+3. Review dashboard progress and urgent tasks.
+4. Prepare forms and manage uploaded files.
+5. Maintain personal data from the profile area.
 
-## What’s In This Repository
+## Quick Preview
 
-This repository is intentionally small and currently tracks just the shipped static app files plus lightweight repo metadata:
+Because this repository is already a compiled static build, you can preview it locally with a simple file server.
 
-- `index.html` — application entry point
-- `assets/index-CRLi9VJE.js` — bundled JavaScript application code
-- `assets/index-CVMP6SqA.css` — compiled stylesheet bundle
-- `favicon.svg` — checked-in favicon asset
-- `.gitignore` — local-environment cleanup rules for this artifact repo
+```bash
+python3 -m http.server 8000
+```
+
+Then open [http://localhost:8000/](http://localhost:8000/).
+
+## Repository Contents
+
+The repository intentionally stays small and tracks just the shipped app shell plus minimal repo metadata.
+
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Static application entry point |
+| `assets/index-CRLi9VJE.js` | Bundled JavaScript application code |
+| `assets/index-CVMP6SqA.css` | Compiled stylesheet bundle |
+| `favicon.svg` | Checked-in favicon asset |
+| `.gitignore` | Local-environment cleanup rules |
 
 ## Repository Scope
 
-This is not the original development repository. It should be treated as a deployable frontend artifact and reviewable product snapshot.
+This is not the original development repository. It should be treated as a reviewable frontend artifact and deployable product snapshot.
 
 What is not included here:
 
@@ -50,128 +59,3 @@ What is not included here:
 - environment files
 - backend services
 - deployment automation
-
-In practice, this repo is best for:
-
-- previewing the current UI
-- sharing the current build with reviewers or stakeholders
-- static hosting and simple demo deployments
-
-## Main App Areas
-
-### Authentication
-
-Touchdown includes dedicated login and registration flows, with support references for both Google and email-based accounts.
-
-### Onboarding
-
-Users are guided through a relocation setup flow that captures key move context such as destination country, visa type, arrival date, and nationality.
-
-### Dashboard
-
-The dashboard acts as the central navigation and status area for the relocation journey.
-
-It now includes:
-
-- task filtering by category and status
-- task and notes search
-- a one-click filter reset
-
-### Documents
-
-The documents area provides:
-
-- fillable preparation guides
-- uploaded document management
-- category-based document organization
-- uploaded document search
-- file download and deletion actions
-- official-resource links and preparation disclaimers inside form flows
-
-### Profile and Privacy
-
-The profile area includes editable personal information, move summaries, and privacy tools such as data export and sign-out.
-
-It also includes quick actions for:
-
-- copying the move summary
-- downloading the move summary as a text file
-
-## Important Product Note
-
-This shipped build does **not** currently support server-side account deletion.
-
-The privacy flow in this repo supports:
-
-- exporting user data as JSON
-- signing out on the current device
-
-It should not be described as permanently deleting server-side records unless the underlying backend is updated to support that behavior.
-
-## Routes
-
-The bundled app includes these client routes:
-
-- `#/`
-- `#/login`
-- `#/register`
-- `#/onboarding`
-- `#/dashboard`
-- `#/documents`
-- `#/profile`
-
-If no hash route is present, the app redirects to `#/`.
-
-## Running Locally
-
-Because this is a static build, you can preview it with a simple local server.
-
-### Python
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000/
-```
-
-## Deployment
-
-Touchdown can be deployed to any static hosting provider, including:
-
-- Netlify
-- Vercel
-- GitHub Pages
-- Cloudflare Pages
-- Amazon S3 + CloudFront
-
-Deployment notes:
-
-1. Upload the repository contents as-is.
-2. Serve `index.html` as the entry point.
-3. Preserve the `assets/` directory structure.
-
-Because routing is hash-based, additional SPA rewrite rules are generally not required.
-
-## Current Build Notes
-
-This repository reflects a shipped static build with a small set of cleanup and usability fixes already applied. In particular, the current build includes:
-
-- corrected Touchdown-branded export filenames
-- improved favicon handling for static hosting
-- improved mobile viewport behavior
-- clearer sign-out and privacy messaging
-- more reliable object-URL download flows
-- stricter document upload validation and better document error handling
-- dashboard task search and clearer filter-state feedback
-- document vault search with filtered-result feedback
-- move summary copy and download actions
-- removal of injected inline-capture markup from `index.html`
-- removal of unused external font imports from the shipped HTML shell
-
-## Suggested Next Step
-
-For long-term maintainability, pair this frontend build with the original source repository so this README can document the real stack, setup process, environment variables, build workflow, and backend dependencies.
