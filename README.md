@@ -47,6 +47,33 @@ The repository intentionally stays small and tracks just the shipped app shell p
 | `favicon.svg` | Checked-in favicon asset |
 | `.gitignore` | Local-environment cleanup rules |
 
+## Main App Areas
+
+| Area | What it covers |
+| --- | --- |
+| Authentication | Login and registration flows with Google and email-oriented account paths |
+| Onboarding | Destination country, visa type, arrival date, and nationality capture |
+| Dashboard | Checklist progress, filtering, search, and urgent-task visibility |
+| Documents | Prep sheets, document uploads, category organization, and downloads |
+| Profile | Personal details, move summary tools, and profile-backed form prefill |
+| Privacy | Data export and local-device sign-out controls |
+
+## Routes
+
+The bundled app currently exposes the following client routes.
+
+| Route | Area |
+| --- | --- |
+| `#/` | Landing page |
+| `#/login` | Login |
+| `#/register` | Registration |
+| `#/onboarding` | Relocation setup |
+| `#/dashboard` | Progress dashboard |
+| `#/documents` | Forms and document vault |
+| `#/profile` | Profile and privacy tools |
+
+If no hash route is present, the app redirects to `#/`.
+
 ## Repository Scope
 
 This is not the original development repository. It should be treated as a reviewable frontend artifact and deployable product snapshot.
@@ -59,3 +86,12 @@ What is not included here:
 - environment files
 - backend services
 - deployment automation
+
+## Current Limitations
+
+A few boundaries are important to call out clearly when sharing this repo:
+
+- server-side account deletion is not available in this shipped build
+- repository-level edits happen against compiled assets rather than source components
+- deeper architecture details are not recoverable from this artifact alone
+- validation and behavior changes should be treated as bundle-level patches, not full source maintenance
