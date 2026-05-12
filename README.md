@@ -74,6 +74,19 @@ The bundled app currently exposes the following client routes.
 
 If no hash route is present, the app redirects to `#/`.
 
+## Deployment Notes
+
+Touchdown can be deployed to any static hosting provider, including Netlify, Vercel, GitHub Pages, Cloudflare Pages, or S3-backed static hosting.
+
+Deployment checklist:
+
+1. Upload the repository contents as-is.
+2. Serve `index.html` as the entry point.
+3. Preserve the `assets/` directory structure.
+4. Keep `favicon.svg` at the repository root.
+
+Because routing is hash-based, additional SPA rewrite rules are generally not required.
+
 ## Repository Scope
 
 This is not the original development repository. It should be treated as a reviewable frontend artifact and deployable product snapshot.
@@ -95,3 +108,31 @@ A few boundaries are important to call out clearly when sharing this repo:
 - repository-level edits happen against compiled assets rather than source components
 - deeper architecture details are not recoverable from this artifact alone
 - validation and behavior changes should be treated as bundle-level patches, not full source maintenance
+
+## Current Build Highlights
+
+This snapshot already includes a number of usability and cleanup improvements, including:
+
+- corrected Touchdown-branded export filenames
+- improved favicon handling for static hosting
+- improved mobile viewport behavior
+- clearer sign-out and privacy messaging
+- more reliable object-URL download flows
+- stricter document upload validation and error handling
+- dashboard search, filter feedback, and urgent-task visibility improvements
+- document vault search with filtered-result feedback
+- move summary and destination copy/download actions
+- removal of stray injected markup and unused font imports from the app shell
+
+## Maintenance Notes
+
+When updating this artifact repo, the safest workflow is:
+
+1. Make narrowly scoped edits.
+2. Re-verify the shipped bundle after each change.
+3. Keep README statements tied to behavior visible in the current build.
+4. Avoid describing missing source code, backend behavior, or unreleased features as present.
+
+## Suggested Next Step
+
+For long-term maintainability, pair this frontend build with the original source repository so future documentation can cover the real stack, setup flow, environment variables, and deployment pipeline.
