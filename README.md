@@ -1,68 +1,70 @@
 # Touchdown
 
-Touchdown is a relocation companion for people moving across borders. It is designed to make international moves feel less chaotic by bringing onboarding, relocation details, document management, and account controls into one guided experience.
+Touchdown is a relocation platform designed to simplify international moves. It brings onboarding, relocation planning, document organization, and account management into one experience so users can navigate a complex cross-border move with more clarity and less friction.
 
-This folder contains the production build of the frontend application. It is ready to be previewed locally or deployed to a static hosting platform.
+This repository currently contains the production-ready frontend build of the application. It can be previewed locally or deployed directly to any static hosting provider.
 
 ## Overview
 
-The shipped application appears to support the core journey of an international mover:
+International relocation usually involves scattered documents, deadlines, forms, and personal details spread across multiple tools. Touchdown is built to centralize that journey in one place.
 
-- create an account or sign in
-- complete a relocation onboarding flow
-- track move-related information such as destination, visa type, arrival date, and nationality
-- manage relocation documents from a dedicated documents area
-- review and update profile information
-- control privacy settings, export data, and delete the account when needed
+From the shipped application, the product appears to support:
 
-The app uses a dashboard-style interface and hash-based client-side routing, which makes it suitable for static hosting without server-side route handling.
+- user registration and sign-in
+- relocation onboarding
+- tracking move details such as destination, visa type, nationality, and arrival date
+- document-related workflows
+- profile and privacy management
+- data export and account deletion
 
-## What’s in this folder
+The app is structured as a client-side single-page application with hash-based routing, which makes it easy to host as a static site.
 
-This export includes only compiled frontend assets:
+## Repository Contents
 
-- `index.html` - application entry point
-- `assets/index-CRLi9VJE.js` - bundled JavaScript application code
-- `assets/index-CVMP6SqA.css` - compiled stylesheet bundle
+This project includes compiled frontend assets:
 
-This export does **not** include:
+- `index.html` — application entry point
+- `assets/index-CRLi9VJE.js` — bundled JavaScript application code
+- `assets/index-CVMP6SqA.css` — compiled stylesheet bundle
+
+## What Is Not Included
+
+This is not the full source repository. It does not currently include:
 
 - source React components
-- `package.json`
-- build scripts
+- build tooling
 - test files
 - environment configuration
 - backend services
+- deployment pipelines from the original app
 
-That means this directory should be treated as a deployment artifact, not the original development repository.
+Because of that, this repository should be treated primarily as a deployable frontend artifact rather than a full development workspace.
 
-## Core App Areas
-
-Based on the bundled application, the main user-facing sections are:
+## Product Areas
 
 ### Authentication
 
-Users can sign in or register through dedicated auth screens. The build also references both Google sign-in and email-based account access.
+The app includes dedicated login and registration flows, with references to both Google sign-in and email-based authentication.
 
 ### Onboarding
 
-New users are guided through a relocation setup flow that appears to capture move-specific details such as destination country, visa type, arrival date, and nationality.
+New users are guided through a relocation setup flow that appears to collect essential move context such as destination country, visa type, arrival date, and nationality.
 
 ### Dashboard
 
-The dashboard acts as the central workspace for a user’s relocation journey and likely surfaces status, next steps, or move progress in a single view.
+The dashboard acts as the central workspace for the relocation journey and likely helps users review progress, navigate the app, and keep track of what comes next.
 
 ### Documents
 
-The documents section is intended for relocation paperwork and document-related workflows, making it easier to keep required files in one place.
+A dedicated documents area suggests support for organizing relocation paperwork and managing file-related tasks in one place.
 
 ### Profile and Privacy
 
-The profile area includes editable personal details, a move summary, data export, and account deletion controls, with privacy messaging built into the interface.
+The profile section includes editable personal details, move summaries, privacy messaging, data export, and account deletion controls.
 
-## Available Routes
+## Routes
 
-The app bundle includes the following client routes:
+The bundle includes the following client-side routes:
 
 - `#/`
 - `#/login`
@@ -72,13 +74,13 @@ The app bundle includes the following client routes:
 - `#/documents`
 - `#/profile`
 
-If the URL does not contain a hash, the app automatically redirects to `#/`.
+If the app loads without a hash route, it redirects to `#/`.
 
 ## Running Locally
 
-Since this is a static build, you only need a simple local web server.
+Since this is a static build, it can be previewed with any simple local server.
 
-### Option 1: Python
+### Python
 
 ```bash
 python3 -m http.server 8000
