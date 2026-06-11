@@ -1,70 +1,86 @@
 # Touchdown
 
-Touchdown is a relocation platform designed to simplify international moves. It brings onboarding, relocation planning, document organization, and account management into one experience so users can navigate a complex cross-border move with more clarity and less friction.
+Touchdown is a relocation platform for people managing international moves. It brings onboarding, move details, document handling, and profile management into one guided experience so users can stay organized through a complex cross-border process.
 
-This repository currently contains the production-ready frontend build of the application. It can be previewed locally or deployed directly to any static hosting provider.
+This repository currently contains the production frontend build of the app rather than the original source codebase.
 
-## Overview
+## What Touchdown Does
 
-International relocation usually involves scattered documents, deadlines, forms, and personal details spread across multiple tools. Touchdown is built to centralize that journey in one place.
+From the shipped app bundle, Touchdown appears to support:
 
-From the shipped application, the product appears to support:
-
-- user registration and sign-in
+- account registration and sign-in
 - relocation onboarding
-- tracking move details such as destination, visa type, nationality, and arrival date
-- document-related workflows
-- profile and privacy management
-- data export and account deletion
+- destination, visa, arrival-date, and nationality tracking
+- document upload and download workflows
+- profile management with form pre-fill data
+- data export
+- privacy and sign-out controls
 
-The app is structured as a client-side single-page application with hash-based routing, which makes it easy to host as a static site.
+The app uses hash-based client-side routing, so it can be hosted as a static single-page application.
 
-## Repository Contents
+## What’s In This Repository
 
-This project includes compiled frontend assets:
+The project currently includes compiled frontend assets:
 
 - `index.html` — application entry point
 - `assets/index-CRLi9VJE.js` — bundled JavaScript application code
 - `assets/index-CVMP6SqA.css` — compiled stylesheet bundle
+- `favicon.svg` — checked-in favicon asset
 
-## What Is Not Included
+## What’s Missing
 
-This is not the full source repository. It does not currently include:
+This is not the original development repository. It does not currently include:
 
 - source React components
-- build tooling
-- test files
-- environment configuration
+- build configuration
+- test suites
+- environment files
 - backend services
-- deployment pipelines from the original app
+- deployment automation
 
-Because of that, this repository should be treated primarily as a deployable frontend artifact rather than a full development workspace.
+Because of that, this repo should be treated primarily as a deployable frontend artifact and reviewable product snapshot.
 
-## Product Areas
+## Main App Areas
 
 ### Authentication
 
-The app includes dedicated login and registration flows, with references to both Google sign-in and email-based authentication.
+Touchdown includes dedicated login and registration flows, with support references for both Google and email-based accounts.
 
 ### Onboarding
 
-New users are guided through a relocation setup flow that appears to collect essential move context such as destination country, visa type, arrival date, and nationality.
+Users are guided through a relocation setup flow that captures key move context such as destination country, visa type, arrival date, and nationality.
 
 ### Dashboard
 
-The dashboard acts as the central workspace for the relocation journey and likely helps users review progress, navigate the app, and keep track of what comes next.
+The dashboard acts as the central navigation and status area for the relocation journey.
 
 ### Documents
 
-A dedicated documents area suggests support for organizing relocation paperwork and managing file-related tasks in one place.
+The documents area provides:
+
+- fillable preparation guides
+- uploaded document management
+- category-based document organization
+- file download and deletion actions
 
 ### Profile and Privacy
 
-The profile section includes editable personal details, move summaries, privacy messaging, data export, and account deletion controls.
+The profile area includes editable personal information, move summaries, and privacy tools such as data export and sign-out.
+
+## Important Product Note
+
+This shipped build does **not** currently support server-side account deletion.
+
+The privacy flow in this repo supports:
+
+- exporting user data as JSON
+- signing out on the current device
+
+It should not be described as permanently deleting server-side records unless the underlying backend is updated to support that behavior.
 
 ## Routes
 
-The bundle includes the following client-side routes:
+The bundled app includes these client routes:
 
 - `#/`
 - `#/login`
@@ -74,13 +90,70 @@ The bundle includes the following client-side routes:
 - `#/documents`
 - `#/profile`
 
-If the app loads without a hash route, it redirects to `#/`.
+If no hash route is present, the app redirects to `#/`.
 
 ## Running Locally
 
-Since this is a static build, it can be previewed with any simple local server.
+Because this is a static build, you can preview it with a simple local server.
 
 ### Python
 
 ```bash
 python3 -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000/
+```
+
+## Deployment
+
+Touchdown can be deployed to any static hosting provider, including:
+
+- Netlify
+- Vercel
+- GitHub Pages
+- Cloudflare Pages
+- Amazon S3 + CloudFront
+
+Deployment notes:
+
+1. Upload the repository contents as-is.
+2. Serve `index.html` as the entry point.
+3. Preserve the `assets/` directory structure.
+4. Keep external font access available if you want the shipped typography to render correctly.
+
+Because routing is hash-based, additional SPA rewrite rules are generally not required.
+
+## Current Build Notes
+
+Recent fixes in this repository include:
+
+- corrected Touchdown-branded export filenames
+- improved favicon handling for static hosting
+- improved mobile viewport behavior
+- clearer sign-out and privacy messaging
+- more reliable object-URL download flows
+- stricter document upload validation and better document error handling
+
+## Best Use For This Repo
+
+This repository is well suited for:
+
+- product review
+- stakeholder demos
+- static deployment
+- UI inspection
+
+It is less suited for:
+
+- feature development from source
+- dependency management
+- running meaningful automated tests
+- rebuilding the application from source
+
+## Suggested Next Step
+
+For long-term maintainability, pair this frontend build with the original source repository so this README can document the real stack, setup process, environment variables, build workflow, and backend dependencies.
