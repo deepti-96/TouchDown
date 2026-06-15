@@ -54,6 +54,12 @@ Users are guided through a relocation setup flow that captures key move context 
 
 The dashboard acts as the central navigation and status area for the relocation journey.
 
+It now includes:
+
+- task filtering by category and status
+- task and notes search
+- a one-click filter reset
+
 ### Documents
 
 The documents area provides:
@@ -61,11 +67,17 @@ The documents area provides:
 - fillable preparation guides
 - uploaded document management
 - category-based document organization
+- uploaded document search
 - file download and deletion actions
 
 ### Profile and Privacy
 
 The profile area includes editable personal information, move summaries, and privacy tools such as data export and sign-out.
+
+It also includes quick actions for:
+
+- copying the move summary
+- downloading the move summary as a text file
 
 ## Important Product Note
 
@@ -137,6 +149,9 @@ Recent fixes in this repository include:
 - clearer sign-out and privacy messaging
 - more reliable object-URL download flows
 - stricter document upload validation and better document error handling
+- dashboard task search and quick filter clearing
+- document vault search with filtered-result feedback
+- move summary copy and download actions
 
 ## Best Use For This Repo
 
