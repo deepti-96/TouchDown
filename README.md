@@ -50,6 +50,14 @@ This is not the original development repository. It does not currently include:
 
 Because of that, this repo should be treated primarily as a deployable frontend artifact and reviewable product snapshot.
 
+In practice, this repository is best used for:
+
+- previewing the current UI
+- sharing the current build with reviewers or stakeholders
+- static hosting and simple demo deployments
+
+It is not the right place for source-level feature development, dependency upgrades, or architectural changes.
+
 ## Main App Areas
 
 ### Authentication
@@ -79,6 +87,7 @@ The documents area provides:
 - category-based document organization
 - uploaded document search
 - file download and deletion actions
+- official-resource links and preparation disclaimers inside form flows
 
 ### Profile and Privacy
 
