@@ -2,7 +2,7 @@
 
 Touchdown is a relocation platform for people managing international moves. It brings onboarding, move details, document handling, and profile management into one guided experience so users can stay organized through a complex cross-border process.
 
-This repository currently contains the production frontend build of the app rather than the original source codebase.
+This repository contains the production frontend build of the Touchdown web app rather than the original source codebase.
 
 ## What Touchdown Does
 
@@ -17,6 +17,16 @@ From the shipped app bundle, Touchdown appears to support:
 - privacy and sign-out controls
 
 The app uses hash-based client-side routing, so it can be hosted as a static single-page application.
+
+## Product Snapshot
+
+Touchdown is built around a simple relocation workflow:
+
+1. Create an account or sign in.
+2. Complete onboarding with destination, visa, arrival date, and nationality details.
+3. Review the dashboard for checklist progress.
+4. Prepare forms and manage uploaded files from the documents area.
+5. Maintain personal details and export account data from the profile area.
 
 ## What’s In This Repository
 
