@@ -160,7 +160,7 @@ Because routing is hash-based, additional SPA rewrite rules are generally not re
 
 ## Current Build Notes
 
-Recent fixes in this repository include:
+This repository currently reflects a shipped static build with a few documentation and usability improvements already applied. In particular, the current build includes:
 
 - corrected Touchdown-branded export filenames
 - improved favicon handling for static hosting
@@ -171,6 +171,8 @@ Recent fixes in this repository include:
 - dashboard task search and quick filter clearing
 - document vault search with filtered-result feedback
 - move summary copy and download actions
+
+A later bug-fix batch was intentionally rolled back, so this README describes the current working build rather than every attempted intermediate change in git history.
 
 ## Best Use For This Repo
 
