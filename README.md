@@ -38,9 +38,11 @@ This repository is intentionally small and currently tracks just the shipped sta
 - `favicon.svg` — checked-in favicon asset
 - `.gitignore` — local-environment cleanup rules for this artifact repo
 
-## What’s Missing
+## Repository Scope
 
-This is not the original development repository. It does not currently include:
+This is not the original development repository. It should be treated as a deployable frontend artifact and reviewable product snapshot.
+
+What is not included here:
 
 - source React components
 - build configuration
@@ -49,15 +51,11 @@ This is not the original development repository. It does not currently include:
 - backend services
 - deployment automation
 
-Because of that, this repo should be treated primarily as a deployable frontend artifact and reviewable product snapshot.
-
-In practice, this repository is best used for:
+In practice, this repo is best for:
 
 - previewing the current UI
 - sharing the current build with reviewers or stakeholders
 - static hosting and simple demo deployments
-
-It is not the right place for source-level feature development, dependency upgrades, or architectural changes.
 
 ## Main App Areas
 
@@ -174,22 +172,6 @@ This repository currently reflects a shipped static build with a few documentati
 - move summary copy and download actions
 
 A later bug-fix batch was intentionally rolled back, so this README describes the current working build rather than every attempted intermediate change in git history.
-
-## Best Use For This Repo
-
-This repository is well suited for:
-
-- product review
-- stakeholder demos
-- static deployment
-- UI inspection
-
-It is less suited for:
-
-- feature development from source
-- dependency management
-- running meaningful automated tests
-- rebuilding the application from source
 
 ## Suggested Next Step
 
