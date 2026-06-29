@@ -30,12 +30,13 @@ Touchdown is built around a simple relocation workflow:
 
 ## What’s In This Repository
 
-The project currently includes compiled frontend assets:
+This repository is intentionally small and currently tracks just the shipped static app files plus lightweight repo metadata:
 
 - `index.html` — application entry point
 - `assets/index-CRLi9VJE.js` — bundled JavaScript application code
 - `assets/index-CVMP6SqA.css` — compiled stylesheet bundle
 - `favicon.svg` — checked-in favicon asset
+- `.gitignore` — local-environment cleanup rules for this artifact repo
 
 ## What’s Missing
 
