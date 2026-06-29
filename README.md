@@ -153,13 +153,12 @@ Deployment notes:
 1. Upload the repository contents as-is.
 2. Serve `index.html` as the entry point.
 3. Preserve the `assets/` directory structure.
-4. Keep external font access available if you want the shipped typography to render correctly.
 
 Because routing is hash-based, additional SPA rewrite rules are generally not required.
 
 ## Current Build Notes
 
-This repository currently reflects a shipped static build with a few documentation and usability improvements already applied. In particular, the current build includes:
+This repository reflects a shipped static build with a small set of cleanup and usability fixes already applied. In particular, the current build includes:
 
 - corrected Touchdown-branded export filenames
 - improved favicon handling for static hosting
@@ -167,11 +166,11 @@ This repository currently reflects a shipped static build with a few documentati
 - clearer sign-out and privacy messaging
 - more reliable object-URL download flows
 - stricter document upload validation and better document error handling
-- dashboard task search and quick filter clearing
+- dashboard task search and clearer filter-state feedback
 - document vault search with filtered-result feedback
 - move summary copy and download actions
-
-A later bug-fix batch was intentionally rolled back, so this README describes the current working build rather than every attempted intermediate change in git history.
+- removal of injected inline-capture markup from `index.html`
+- removal of unused external font imports from the shipped HTML shell
 
 ## Suggested Next Step
 
