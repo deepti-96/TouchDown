@@ -2,7 +2,15 @@
 
 Touchdown is a static relocation-tracking web app for people managing international moves. This build brings onboarding, move details, checklist progress, document handling, and profile management into one guided experience.
 
-This repository contains the shipped frontend artifact rather than the original source codebase. It works best as a deployable UI snapshot for demos, reviews, and lightweight static hosting.
+This repository contains the shipped frontend artifact rather than the original source codebase. It works best as a deployable UI snapshot for demos, reviews, stakeholder walkthroughs, and lightweight static hosting.
+
+## Best For
+
+This artifact repository is especially useful when you need to:
+
+- preview the current Touchdown UI quickly
+- share a static build with reviewers or non-technical stakeholders
+- deploy a simple hosted demo without rebuilding from source
 
 ## At a Glance
 
