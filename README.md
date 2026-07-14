@@ -95,6 +95,12 @@ Deployment checklist:
 
 Because routing is hash-based, additional SPA rewrite rules are generally not required.
 
+Before sharing a deployment, it is worth quickly checking that:
+
+- the `assets/` directory is intact
+- the theme toggle loads correctly on first paint
+- hash routes still open the expected screens
+
 ## Repository Scope
 
 This is not the original development repository. It should be treated as a reviewable frontend artifact and deployable product snapshot.
@@ -141,6 +147,7 @@ When updating this artifact repo, the safest workflow is:
 2. Re-verify the shipped bundle after each change.
 3. Keep README statements tied to behavior visible in the current build.
 4. Avoid describing missing source code, backend behavior, or unreleased features as present.
+5. Prefer small, reviewable commit slices when patching compiled assets directly.
 
 ## Suggested Next Step
 
