@@ -18,10 +18,10 @@ Touchdown currently presents a relocation workflow centered around:
 
 - account registration and sign-in
 - destination, visa, arrival-date, and nationality setup
-- dashboard task tracking and search
+- dashboard task tracking, search, and urgent-item visibility
 - document upload, organization, and prep-sheet downloads
 - profile management with pre-filled form data
-- data export and local sign-out controls
+- data export, local sign-out controls, and dark mode support
 
 The app uses hash-based client-side routing, so it can be hosted as a static single-page application without extra rewrite complexity.
 
@@ -124,12 +124,13 @@ This snapshot already includes a number of usability and cleanup improvements, i
 - corrected Touchdown-branded export filenames
 - improved favicon handling for static hosting
 - improved mobile viewport behavior
+- persistent dark mode with public and in-app theme toggles
 - clearer sign-out and privacy messaging
 - more reliable object-URL download flows
 - stricter document upload validation and error handling
-- dashboard search, filter feedback, and urgent-task visibility improvements
-- document vault search with filtered-result feedback
-- move summary and destination copy/download actions
+- dashboard search, filter feedback, urgent-task visibility, and richer status cues
+- document vault search with filtered-result feedback and summary badges
+- move summary, destination copy/download actions, and profile readiness indicators
 - removal of stray injected markup and unused font imports from the app shell
 
 ## Maintenance Notes
