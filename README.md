@@ -100,6 +100,8 @@ Before sharing a deployment, it is worth quickly checking that:
 - the `assets/` directory is intact
 - the theme toggle loads correctly on first paint
 - hash routes still open the expected screens
+- login, registration, and 404 recovery links keep users inside the static app
+- same-origin API requests resolve relative to the current host
 
 ## Repository Scope
 
@@ -150,6 +152,7 @@ When updating this artifact repo, the safest workflow is:
 3. Keep README statements tied to behavior visible in the current build.
 4. Avoid describing missing source code, backend behavior, or unreleased features as present.
 5. Prefer small, reviewable commit slices when patching compiled assets directly.
+6. Re-check the bundled app shell after any manual asset patch.
 
 ## Suggested Next Step
 
