@@ -4,6 +4,8 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
+*.swp
+*~
 .python-version
 
 # Python cache
