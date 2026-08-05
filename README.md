@@ -130,11 +130,11 @@ A few boundaries are important to call out clearly when sharing this repo:
 This snapshot already includes a number of usability and cleanup improvements, including:
 
 - corrected Touchdown-branded export filenames
-- improved favicon handling for static hosting
-- improved mobile viewport behavior
+- improved favicon handling with accessible ARIA attributes
+- improved mobile viewport behavior with viewport-fit and iOS home screen support
 - persistent dark mode with public and in-app theme toggles
 - clearer sign-out and privacy messaging
-- more reliable object-URL download flows
+- more reliable object-URL download flows with safe revoke timing
 - stricter document upload validation and error handling
 - same-origin API request paths for hosted static previews
 - self-contained stylesheet loading without external font requests
@@ -142,6 +142,13 @@ This snapshot already includes a number of usability and cleanup improvements, i
 - document vault search with filtered-result feedback and summary badges
 - move summary, destination copy/download actions, and profile readiness indicators
 - removal of stray injected markup and unused font imports from the app shell
+- Open Graph meta tags for rich link previews in social media and messaging apps
+- modulepreload hint for faster ES module loading
+- hash-routed 404 recovery links to keep users inside the SPA
+- system-aware theme-color for correct browser chrome on first paint
+- cross-browser scrollbar styling with Firefox support
+- scrollbar-gutter stability to prevent layout shift on modal open
+- search engine discoverability with explicit robots meta
 
 ## Maintenance Notes
 
