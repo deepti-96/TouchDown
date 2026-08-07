@@ -52,8 +52,9 @@ The repository intentionally stays small and tracks just the shipped app shell p
 | `index.html` | Static application entry point |
 | `assets/index-CRLi9VJE.js` | Bundled JavaScript application code |
 | `assets/index-CVMP6SqA.css` | Compiled stylesheet bundle |
-| `favicon.svg` | Checked-in favicon asset |
-| `.gitignore` | Local-environment cleanup rules |
+| `favicon.svg` | Accessible SVG favicon with ARIA title |
+| `.gitignore` | Local-environment and deploy-artifact exclusions |
+| `README.md` | Project documentation and maintenance guide |
 
 ## Main App Areas
 
