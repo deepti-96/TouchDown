@@ -103,6 +103,9 @@ Before sharing a deployment, it is worth quickly checking that:
 - hash routes still open the expected screens
 - login, registration, and 404 recovery links keep users inside the static app
 - same-origin API requests resolve relative to the current host
+- Open Graph image resolves at the deployed URL (check `/favicon.svg`)
+- print output shows content without navigation chrome (Cmd+P / Ctrl+P)
+- animations are suppressed when OS reduced-motion is enabled
 
 ## Repository Scope
 
