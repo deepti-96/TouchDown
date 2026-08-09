@@ -2,3 +2,4 @@
  
 @media(prefers-reduced-motion:reduce){*,:before,:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 @media print{aside,.fixed,header,nav,button,[data-radix-popper-content-wrapper]{display:none!important}main{margin:0!important;padding:1rem!important}.page-transition{animation:none!important}}
+::selection{background-color:hsl(var(--primary) / .3);color:hsl(var(--foreground))}
