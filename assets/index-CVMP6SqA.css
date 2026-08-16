@@ -3,4 +3,4 @@
 @media(prefers-reduced-motion:reduce){*,:before,:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 @media print{aside,.fixed,header,nav,button,[data-radix-popper-content-wrapper]{display:none!important}main{margin:0!important;padding:1rem!important}.page-transition{animation:none!important}}
 select{-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%236b7280' d='M2 4l4 4 4-4'/></svg>");background-repeat:no-repeat;background-position:right .75rem center;background-size:.75rem;padding-right:2rem}.dark select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%239ca3af' d='M2 4l4 4 4-4'/></svg>")}::selection{background-color:hsl(var(--primary) / .3);color:hsl(var(--foreground))}
-.sm\:w-auto{width:auto}.sm\:w-full{width:100%}
+.sm\:w-64{width:16rem}.sm\:w-auto{width:auto}.sm\:w-full{width:100%}
