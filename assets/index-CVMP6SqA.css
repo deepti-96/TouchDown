@@ -9,7 +9,7 @@ button:active:not(:disabled){filter:brightness(.92)}
 .hover\:underline:hover{text-underline-offset:3px;text-decoration-thickness:1.5px}
 input,textarea{transition:border-color .15s ease,box-shadow .15s ease}
 aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .15s ease,opacity .15s ease}aside nav a:hover{padding-left:1.25rem}
-@keyframes shimmer{100%{background-position:-200% 0}}.animate-pulse.bg-card{background-image:linear-gradient(90deg,transparent,hsl(var(--muted) / .4),transparent);background-size:200% 100%;animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite,shimmer 1.5s linear infinite}
+@keyframes shimmer{100%{background-position:-200% 0}}.animate-pulse.bg-card{background-image:linear-gradient(90deg,transparent,hsl(var(--muted) / .5),transparent);background-size:200% 100%;animation:shimmer 1.6s ease-in-out infinite}
 a,[role=button],[tabindex]{transition:box-shadow .15s ease,outline-color .15s ease}
 .h-full.bg-primary.rounded-full{background-image:linear-gradient(90deg,hsl(var(--primary)),hsl(var(--primary) / .8))}
 .shadcn-card.card-hover:hover{box-shadow:0 8px 20px rgb(0 0 0 / .1),0 3px 6px rgb(0 0 0 / .06)}.dark .shadcn-card.card-hover:hover{box-shadow:0 8px 20px rgb(0 0 0 / .45),0 3px 6px rgb(0 0 0 / .35)}
