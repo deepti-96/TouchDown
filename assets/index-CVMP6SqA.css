@@ -12,3 +12,4 @@ aside nav a{transition:background-color .15s ease,color .15s ease,transform .15s
 @keyframes shimmer{100%{background-position:-200% 0}}.animate-pulse.bg-card{background-image:linear-gradient(90deg,transparent,hsl(var(--muted) / .4),transparent);background-size:200% 100%;animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite,shimmer 1.5s linear infinite}
 a,[role=button],[tabindex]{transition:box-shadow .15s ease,outline-color .15s ease}
 .h-full.bg-primary.rounded-full{background-image:linear-gradient(90deg,hsl(var(--primary)),hsl(var(--primary) / .8))}
+.shadcn-card.card-hover:hover{box-shadow:0 8px 20px rgb(0 0 0 / .1),0 3px 6px rgb(0 0 0 / .06)}.dark .shadcn-card.card-hover:hover{box-shadow:0 8px 20px rgb(0 0 0 / .45),0 3px 6px rgb(0 0 0 / .35)}
