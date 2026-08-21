@@ -17,3 +17,4 @@ a,[role=button],[tabindex]{transition:box-shadow .15s ease,outline-color .15s ea
 [role=dialog]{animation-timing-function:cubic-bezier(.16,1,.3,1)}
 .group.pointer-events-auto.relative.flex.w-full.items-center{box-shadow:0 8px 24px rgb(0 0 0 / .12),0 2px 6px rgb(0 0 0 / .08)}.dark .group.pointer-events-auto.relative.flex.w-full.items-center{box-shadow:0 8px 24px rgb(0 0 0 / .5),0 2px 6px rgb(0 0 0 / .4)}
 [role=tab][data-state=active]{font-weight:600}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}.mx-auto.mb-4.opacity-40,.text-center .text-5xl{animation:floaty 3s ease-in-out infinite}
