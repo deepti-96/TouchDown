@@ -157,7 +157,7 @@ This snapshot already includes a number of usability and cleanup improvements, i
 - dynamic document title updates per route for screen reader navigation
 - inline color-scheme declaration to prevent dark-mode FOUC
 - print stylesheet that strips navigation chrome for clean printed output
-- ARIA landmark on root container for assistive technology orientation
+- native app structure with semantic landmarks for assistive technology orientation
 
 ## Maintenance Notes
 
