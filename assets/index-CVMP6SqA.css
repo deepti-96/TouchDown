@@ -17,3 +17,14 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 .group.pointer-events-auto.relative.flex.w-full.items-center{box-shadow:0 8px 24px rgb(0 0 0 / .12),0 2px 6px rgb(0 0 0 / .08)}.dark .group.pointer-events-auto.relative.flex.w-full.items-center{box-shadow:0 8px 24px rgb(0 0 0 / .5),0 2px 6px rgb(0 0 0 / .4)}
 [role=tab][data-state=active]{font-weight:600}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}.mx-auto.mb-4.opacity-40,.text-center .text-5xl{animation:floaty 3s ease-in-out infinite}
+/* Keep onboarding progress usable on narrow screens. */
+.onboarding-progress{max-width:100%;flex-wrap:wrap}
+@media(max-width:639px){
+  .onboarding-progress>div{min-width:0}
+}
+@media(max-width:420px){
+  .onboarding-progress{gap:.375rem}
+  .onboarding-progress>div{flex:1 1 calc(50% - .375rem);justify-content:center}
+  .onboarding-progress>div>div:first-child{width:100%;justify-content:center;padding:.5rem .625rem}
+  .onboarding-progress>div>div:last-child{display:none}
+}
