@@ -28,3 +28,4 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
   .onboarding-progress>div>div:first-child{width:100%;justify-content:center;padding:.5rem .625rem}
   .onboarding-progress>div>div:last-child{display:none}
 }
+.opacity-100{opacity:1}
