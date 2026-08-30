@@ -29,3 +29,4 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
   .onboarding-progress>div>div:last-child{display:none}
 }
 .opacity-100{opacity:1}
+.status-pending,.status_in_progress,.status-completed,.status-skipped{transition:background-color .2s ease,color .2s ease}
