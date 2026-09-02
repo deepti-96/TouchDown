@@ -35,7 +35,7 @@ The app uses hash-based client-side routing, so it can be hosted as a static sin
 
 ## Quick Preview
 
-Because this repository is already a compiled static build, you can preview it locally with a simple file server.
+Because this repository is already a compiled static build, you can preview it locally with a simple file server. Run the command from the repository root.
 
 ```bash
 python3 -m http.server 8000
