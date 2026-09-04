@@ -102,7 +102,7 @@ Before sharing a deployment, it is worth quickly checking that:
 - the theme toggle loads correctly on first paint
 - hash routes still open the expected screens
 - login, registration, and 404 recovery links keep users inside the static app
-- same-origin API requests resolve relative to the current host
+- API-backed flows are pointed at same-origin paths and require a separately deployed backend/API
 - Open Graph metadata is present and its image resolves at the deployed URL (check `/favicon.svg`)
 - print output shows content without navigation chrome (Cmd+P / Ctrl+P)
 - animations are suppressed when OS reduced-motion is enabled
@@ -124,7 +124,7 @@ What is not included here:
 
 A few boundaries are important to call out clearly when sharing this repo:
 
-- server-side account deletion is not available in this shipped build
+- API-backed login, registration, onboarding, dashboard, profile, task, upload, and delete flows require a separately deployed backend/API; none is included in this shipped build
 - repository-level edits happen against compiled assets rather than source components
 - deeper architecture details are not recoverable from this artifact alone
 - validation and behavior changes should be treated as bundle-level patches, not full source maintenance
@@ -140,7 +140,7 @@ This snapshot already includes a number of usability and cleanup improvements, i
 - clearer sign-out and privacy messaging
 - more reliable object-URL download flows with safe revoke timing
 - stricter document upload validation and error handling
-- same-origin API request paths for hosted static previews
+- API-backed flows use same-origin request paths and require a separately deployed backend/API
 - self-contained stylesheet loading without external font requests
 - dashboard search, filter feedback, urgent-task visibility, and richer status cues
 - document vault search with filtered-result feedback and summary badges
