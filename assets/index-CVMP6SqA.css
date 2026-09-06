@@ -93,3 +93,6 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 
 @keyframes td-drift-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .td-drift-up{animation:td-drift-up .5s cubic-bezier(.16,1,.3,1) both}
+
+@keyframes td-fade-out{from{opacity:1}to{opacity:0}}
+.td-fade-out{animation:td-fade-out .3s ease-in both}
