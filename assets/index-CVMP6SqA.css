@@ -87,3 +87,6 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 
 .td-tilt{transition:transform .2s ease}
 .td-tilt:hover{transform:rotate(1deg) scale(1.01)}
+
+@keyframes td-glow-soft{0%,100%{box-shadow:0 0 0 0 hsl(var(--primary) / 0)}50%{box-shadow:0 0 0 3px hsl(var(--primary) / .18)}}
+.td-glow-soft{animation:td-glow-soft 2s ease-in-out infinite}
