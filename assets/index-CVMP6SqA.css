@@ -84,3 +84,6 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 
 @keyframes td-shrink{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.92)}}
 .td-shrink{animation:td-shrink .25s ease-in both}
+
+.td-tilt{transition:transform .2s ease}
+.td-tilt:hover{transform:rotate(1deg) scale(1.01)}
