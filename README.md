@@ -87,7 +87,7 @@ If no hash route is present, the app redirects to `#/`.
 
 ## Deployment Notes
 
-Touchdown can be deployed to any static hosting provider, including Netlify, Vercel, GitHub Pages, Cloudflare Pages, or S3-backed static hosting.
+The Touchdown frontend can be deployed to any static hosting provider, including Netlify, Vercel, GitHub Pages, Cloudflare Pages, or S3-backed static hosting. API-backed flows additionally require a separately deployed backend/API.
 
 Deployment checklist:
 
