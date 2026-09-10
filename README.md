@@ -43,6 +43,8 @@ python3 -m http.server 8000
 
 Then open [http://localhost:8000/](http://localhost:8000/).
 
+This command serves the static frontend only. API-backed authentication, profile, task, and document flows require the separately deployed backend/API described below.
+
 ## Repository Contents
 
 The repository intentionally stays small and tracks just the shipped app shell plus minimal repo metadata.
