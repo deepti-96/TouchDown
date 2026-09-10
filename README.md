@@ -60,7 +60,7 @@ The repository intentionally stays small and tracks just the shipped app shell p
 
 | Area | What it covers |
 | --- | --- |
-| Authentication | Login and registration flows with Google and email-oriented account paths |
+| Authentication | Login and registration screens with a demo account path and email-oriented account UI |
 | Onboarding | Destination country, visa type, arrival date, and nationality capture |
 | Dashboard | Checklist progress, filtering, search, and urgent-task visibility |
 | Documents | Prep sheets, document uploads, category organization, and downloads |
