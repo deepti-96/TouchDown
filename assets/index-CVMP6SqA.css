@@ -81,3 +81,6 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 
 @keyframes td-expand-y{from{opacity:0;transform:scaleY(.85);transform-origin:top}to{opacity:1;transform:scaleY(1);transform-origin:top}}
 .td-expand-y{animation:td-expand-y .3s ease-out both}
+
+@keyframes td-shrink{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.92)}}
+.td-shrink{animation:td-shrink .25s ease-in both}
