@@ -78,3 +78,6 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 
 @keyframes td-float-sub{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 .td-float-sub{animation:td-float-sub 3s ease-in-out infinite}
+
+@keyframes td-expand-y{from{opacity:0;transform:scaleY(.85);transform-origin:top}to{opacity:1;transform:scaleY(1);transform-origin:top}}
+.td-expand-y{animation:td-expand-y .3s ease-out both}
