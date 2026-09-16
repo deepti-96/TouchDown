@@ -75,3 +75,6 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 
 @keyframes td-wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-2deg)}75%{transform:rotate(2deg)}}
 .td-wiggle{animation:td-wiggle .3s ease-in-out both}
+
+@keyframes td-float-sub{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.td-float-sub{animation:td-float-sub 3s ease-in-out infinite}
