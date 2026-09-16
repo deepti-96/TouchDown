@@ -72,3 +72,6 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 
 @keyframes td-pop{0%{transform:scale(1)}50%{transform:scale(1.06)}100%{transform:scale(1)}}
 .td-pop{animation:td-pop .25s ease-out both}
+
+@keyframes td-wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-2deg)}75%{transform:rotate(2deg)}}
+.td-wiggle{animation:td-wiggle .3s ease-in-out both}
