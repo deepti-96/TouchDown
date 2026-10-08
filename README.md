@@ -31,7 +31,7 @@ The app uses hash-based client-side routing, so it can be hosted as a static sin
 2. Complete onboarding with move details.
 3. Review dashboard progress and urgent tasks.
 4. Use preparation sheets and manage uploaded files.
-5. Review profile data from the profile area.
+5. Review profile information from the profile area.
 
 ## Quick Preview
 
