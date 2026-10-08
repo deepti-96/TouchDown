@@ -48,3 +48,6 @@ aside nav a{transition:background-color .15s ease,color .15s ease,padding-left .
 
 @keyframes td-pulse-soft{0%,100%{opacity:1}50%{opacity:.7}}
 .td-pulse-soft{animation:td-pulse-soft 1.8s ease-in-out infinite}
+
+@keyframes td-fade-up-sm{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.td-fade-up-sm{animation:td-fade-up-sm .25s ease-out both}
