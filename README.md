@@ -65,7 +65,7 @@ The repository intentionally stays small and tracks just the shipped app shell p
 | Authentication | Login and registration screens with a demo account path and email-oriented account UI |
 | Onboarding | Destination country, visa type, arrival date, and nationality capture |
 | Dashboard | Checklist progress, filtering, search, and urgent-task visibility |
-| Documents | Preparation guides, document uploads, category grouping, and downloads |
+| Documents | Preparation guides, document uploads, document category grouping, and downloads |
 | Profile | Profile details, move details and copy/download tools, and profile-prefill helpers |
 | Privacy | Local data export and sign-out controls |
 
