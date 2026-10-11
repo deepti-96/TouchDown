@@ -20,7 +20,7 @@ Touchdown currently presents a relocation workflow centered around:
 - destination, visa, arrival-date, and nationality setup
 - dashboard task tracking, search, and urgent-item visibility
 - document upload, organization, and prep-sheet downloads
-- profile management with pre-filled form data
+- profile management with profile-prefill helpers
 - data export, local sign-out controls, and dark mode support
 
 The app uses hash-based client-side routing, so it can be hosted as a static single-page application without extra rewrite complexity.
