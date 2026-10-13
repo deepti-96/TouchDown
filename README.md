@@ -85,7 +85,7 @@ The bundled app currently exposes the following client routes.
 
 If no hash route is present, the app redirects to `#/`.
 
-## Deployment Notes
+## Frontend Deployment Notes
 
 The Touchdown frontend can be deployed to any static hosting provider, including Netlify, Vercel, GitHub Pages, Cloudflare Pages, or S3-backed static hosting. API-backed flows additionally require a separately deployed backend/API.
 
