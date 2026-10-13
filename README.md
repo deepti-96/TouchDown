@@ -91,7 +91,7 @@ The Touchdown frontend can be deployed to any static hosting provider, including
 
 Deployment checklist:
 
-1. Upload the repository contents as-is.
+1. Upload the frontend repository contents as-is.
 2. Serve `index.html` as the entry point.
 3. Preserve the `assets/` directory structure.
 4. Keep `favicon.svg` at the repository root.
