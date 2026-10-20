@@ -66,7 +66,7 @@ The repository intentionally stays small and tracks just the shipped app shell p
 | Onboarding | Destination country, visa type, arrival date, and nationality capture |
 | Dashboard | Checklist progress, filtering, search, and urgent-task visibility |
 | Documents | Preparation guides, document uploads, category grouping, and downloads |
-| Profile | Profile details, move summary and copy/download tools, and profile-prefill helpers |
+| Profile | Profile details, move details and copy/download tools, and profile-prefill helpers |
 | Privacy | Local data export and sign-out controls |
 
 ## Routes
