@@ -19,7 +19,7 @@ Touchdown currently presents a relocation workflow centered around:
 - account registration and sign-in
 - destination, visa, arrival-date, and nationality setup
 - dashboard task tracking, search, and urgent-item visibility
-- document upload, organization, and prep-sheet downloads
+- document upload, organization, and preparation guide downloads
 - profile management with profile-prefill helpers
 - data export, local sign-out controls, and dark mode support
 
