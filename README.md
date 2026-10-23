@@ -67,7 +67,7 @@ The repository intentionally stays small and tracks just the shipped app shell p
 | Dashboard | Checklist progress, filtering, search, and urgent-task visibility |
 | Documents | Preparation guides, document uploads, category organization, and downloads |
 | Profile | Profile details, move summary and copy/download tools, and profile-prefill helpers |
-| Privacy | Data export and local-device sign-out controls |
+| Privacy | Local data export and sign-out controls |
 
 ## Routes
 
