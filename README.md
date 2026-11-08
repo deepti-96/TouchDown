@@ -80,7 +80,7 @@ The bundled app currently exposes the following client routes.
 | `#/register` | Registration |
 | `#/onboarding` | Relocation setup |
 | `#/dashboard` | Progress dashboard |
-| `#/documents` | Preparation guides and document vault |
+| `#/documents` | Preparation guides and document storage |
 | `#/profile` | Profile and local privacy tools |
 
 If no hash route is present, the app redirects to `#/`.
