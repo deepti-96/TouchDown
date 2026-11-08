@@ -145,7 +145,7 @@ This snapshot already includes a number of usability and cleanup improvements, i
 - API-backed flows use same-origin request paths and require a separately deployed backend/API
 - self-contained stylesheet loading without external font requests
 - dashboard search, filter feedback, urgent-task visibility, and richer status cues
-- document vault search with filtered-result feedback and summary badges
+- document search with filtered-result feedback and summary badges
 - move summary, destination copy/download actions, and profile readiness indicators
 - removal of stray injected markup and unused font imports from the app shell
 - Open Graph meta tags for rich link previews in social media and messaging apps
