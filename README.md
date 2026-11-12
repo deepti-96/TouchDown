@@ -142,7 +142,6 @@ This snapshot already includes a number of usability and cleanup improvements, i
 - clearer sign-out and privacy messaging
 - more reliable object-URL download flows with safe revoke timing
 - stricter document upload validation and error handling
-- API-backed flows use same-origin request paths and require a separately deployed backend/API
 - self-contained stylesheet loading without external font requests
 - dashboard search, filter feedback, urgent-task visibility, and richer status cues
 - document search with filtered-result feedback and summary badges
