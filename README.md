@@ -146,7 +146,7 @@ This snapshot already includes a number of usability and cleanup improvements, i
 - self-contained stylesheet loading without external font requests
 - dashboard search, filter feedback, urgent-task visibility, and richer status cues
 - document search with filtered-result feedback and summary badges
-- move summary, destination copy/download actions, and profile readiness indicators
+- move details, destination copy/download actions, and profile readiness indicators
 - removal of stray injected markup and unused font imports from the app shell
 - Open Graph meta tags for rich link previews in social media and messaging apps
 - modulepreload hint for faster ES module loading
